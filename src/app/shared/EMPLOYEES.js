@@ -1,11 +1,11 @@
-import headshot1 from '../assets/images/headshot1.png'
-import headshot2 from '../assets/images/headshot2.png'
-import headshot3 from '../assets/images/headshot3.png'
-import headshot4 from '../assets/images/headshot4.png'
-import headshot5 from '../assets/images/headshot5.png'
-import headshot6 from '../assets/images/headshot6.png'
+import headshot1 from '../assets/img/headshot1.png'
+import headshot2 from '../assets/img/headshot2.png'
+import headshot3 from '../assets/img/headshot3.png'
+import headshot4 from '../assets/img/headshot4.png'
+import headshot5 from '../assets/img/headshot5.png'
+import headshot6 from '../assets/img/headshot6.png'
 
-export const STAFF = [
+export const EMPLOYEES = [
     {
         id: 0,
         name: 'Alice Sample',
