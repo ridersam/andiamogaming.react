@@ -1,16 +1,20 @@
-import { Card, CardImg, CardImgOverlay, CardTitle } from "reactstrap";
+import { Card, CardImg, CardImgOverlay,CardBody, CardText, CardTitle } from "reactstrap";
 
-const EmployeeCard = (props) => {
+const EmployeeCard = ({employee}) => {
+    const {image, name, Title} = employee;
     return (
         <Card>
             <CardImg
             width="100%"
-            src={props.employee.image}
-            alt={props.employee.name}
+            src={image}
+            alt={name}
             />
             <CardImgOverlay>
-                <CardTitle>{props.employee.name}</CardTitle>
+                <CardTitle>{name}</CardTitle>
             </CardImgOverlay>
+            <CardBody>
+                <CardText>{Title}</CardText>
+            </CardBody>
         </Card>
     );
 };

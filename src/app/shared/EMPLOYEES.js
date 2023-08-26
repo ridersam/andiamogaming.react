@@ -38,7 +38,7 @@ export const EMPLOYEES = [
         id: 4,
         name: 'Samuel Sample',
         image: headshot5,
-        title: 'Human Resources',
+        Title: 'Human Resources',
         featured: false,
     },
     {

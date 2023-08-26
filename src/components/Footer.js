@@ -9,7 +9,7 @@ const Footer = () => {
                         <h5>this will be the site nav.</h5>
                     </Col>
                     <Col xs='6' sm='3' className='text-center'>
-                    <h5>Social</h5>
+                    <h5 color="links" >Social</h5>
                         <a
                             className='btn btn-social-icon btn-instagram'
                             href='http://instagram.com/'
@@ -41,7 +41,7 @@ const Footer = () => {
                             className='btn btn-link'
                             href='tel:+12065551234'
                         >
-                            <i className='fa fa-phone' /> 1-206-555-1234
+                            <i className='fa fa-phone link-unstyled' /> 1-206-555-1234
                         </a>
                         <br />
                         <a
@@ -49,7 +49,7 @@ const Footer = () => {
                             className='btn btn-link'
                             href='mailto:notreal@notreal.co'
                         >
-                            <i className='fa fa-envelope-o' /> campsites@nucamp.co
+                            <i className='fa fa-envelope-o link-unstyled' /> campsites@nucamp.co
                         </a>
                     </Col>
                 </Row>

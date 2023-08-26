@@ -15,12 +15,12 @@ h3,
 }
 
 h2 {
-  color: #3046c5;
+  color: #907AD6;
 }
 
 .card-img-overlay .card-title {
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #AFBE8F;
 }
 
 .row-content {
@@ -30,7 +30,7 @@ h2 {
 }
 
 .site-footer {
-  background-image: linear-gradient(#cec8ff, white);
+  background-color: #252525;
   padding: 20px 0;
   margin-top: 2rem;
 }
@@ -48,8 +48,7 @@ h2 {
 }
 
 .navbar-dark {
-  background-color: #901cad;
-  background-image: linear-gradient(to right, #5637dd, #3046c5, #510e5a);
+  background-color: #252525;
   margin-bottom: 2rem;
   min-height: 8rem;
 }
@@ -73,3 +72,16 @@ h2 {
   opacity: 0;
   transition: 300ms ease-in;
 }
+
+.page-background {
+  background-color: #070707;
+}
+
+h5 {
+  color: aliceblue;
+}
+
+.link-unstyled {
+  color: aliceblue;
+}
+
