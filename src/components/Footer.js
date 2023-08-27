@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "reactstrap";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -6,10 +7,24 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col xs={{ size: 4, offset: 1 }} sm='2' >
-                        <h5>this will be the site nav.</h5>
+                        <h5>Links</h5>
+                        <ul className='list-unstyled'>
+                            <li>
+                                <Link to='/'>Home</Link>
+                            </li>
+                            <li>
+                                <Link to='/products'>Products</Link>
+                            </li>
+                            <li>
+                                <Link to='/games'>Games</Link>
+                            </li>
+                            <li>
+                                <Link to='/aboutus'>About</Link>
+                            </li>
+                        </ul>
                     </Col>
                     <Col xs='6' sm='3' className='text-center'>
-                    <h5 color="links" >Social</h5>
+                        <h5 color="links" >Social</h5>
                         <a
                             className='btn btn-social-icon btn-instagram'
                             href='http://instagram.com/'
@@ -36,7 +51,7 @@ const Footer = () => {
                         </a>
                     </Col>
                     <Col sm='4' className='text-center'>
-                    <a
+                        <a
                             role='button'
                             className='btn btn-link'
                             href='tel:+12065551234'
