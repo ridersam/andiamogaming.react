@@ -1,8 +1,8 @@
 import { Card, CardImg, CardImgOverlay, CardTitle, CardText, CardBody } from "reactstrap";
 import { Link } from "react-router-dom";
 
-const ProductCard = ({ product }) => {
-    const { name, image, price, id } = product;
+const GameCard = ({ game }) => {
+    const { name, image, released, id } = game;
     return (
         <Link to={`${id}`}>
             <Card>
@@ -15,11 +15,11 @@ const ProductCard = ({ product }) => {
                     <CardTitle>{name}</CardTitle>
                 </CardImgOverlay>
                 <CardBody>
-                    <CardText>{price}</CardText>
+                    <CardText>{released}</CardText>
                 </CardBody>
             </Card>
         </Link>
     );
 };
 
-export default ProductCard;
+export default GameCard;

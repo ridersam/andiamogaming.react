@@ -5,5 +5,9 @@ export const selectAllTiers = () => {
 };
 
 export const selectProductById = (id) => {
-    return TIERS.find((product) => product.id === id);
-}
+    return TIERS.find((product) => product.id === parseInt(id));
+};
+
+export const selectFeaturedProduct = () => {
+    return TIERS.find((product) => product.featured);
+};

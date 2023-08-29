@@ -1,11 +1,12 @@
-
-
+import retro from '../assets/img/gamingretro.png';
+import pc from '../assets/img/gamingpc.png';
+import mobile from '../assets/img/mobilegaming.png';
 
 export const TIERS = [
     {
         id: 0,
         name: 'Intro to Gaming',
-        image: shooter,
+        image: retro,
         price: "free to subscribe!",
         featured: false,
         description:
@@ -14,7 +15,7 @@ export const TIERS = [
     {
         id: 1,
         name: 'Gaming Enthusiast',
-        image: stray,
+        image: pc,
         price: "$4.99/month to subscribe!",
         featured: true,
         description:
@@ -23,7 +24,7 @@ export const TIERS = [
     {
         id: 2,
         name: 'True Gamer',
-        image: fallFlat,
+        image: mobile,
         price: "$14.99/month to subscribe!",
         featured: false,
         description:

@@ -1,7 +1,7 @@
 import { Card, CardImg, CardText, CardBody, Col } from "reactstrap";
 
-const ProductDetail = ({product}) => {
-    const {image, name, price, description } = product;
+const GameDetail = ({game}) => {
+    const {image, name, released, description} = game;
 
     return (
         <Col md='12' className="m-4" >
@@ -14,7 +14,7 @@ const ProductDetail = ({product}) => {
                 <CardBody>
                     <CardText>
                         <h2>{name}</h2>
-                        {description}
+                            {description}
                     </CardText>
                 </CardBody>
             </Card>
@@ -22,4 +22,4 @@ const ProductDetail = ({product}) => {
     );
 };
 
-export default ProductDetail;
+export default GameDetail;

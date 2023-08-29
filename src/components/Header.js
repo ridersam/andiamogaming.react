@@ -7,6 +7,7 @@ import {
     Nav,
     NavItem,
 } from "reactstrap";
+import { NavLink } from "react-router-dom";
 import Logo from '../app/assets/img/earthlogo2.png';
 
 const Header = () => {
@@ -21,17 +22,25 @@ const Header = () => {
             <NavbarToggler onClick={() => {setMenuOpen(!menuOpen)}} />
             <Collapse isOpen={menuOpen} navbar>
                 <Nav className="ms-auto" navbar >
-                    <NavItem className="nav-link" to='/'>
+                    <NavItem >
+                        <NavLink className="nav-link" to='/'>
                         <i className="fa fa-home fa-lg" /> Home
+                        </NavLink>
                     </NavItem>
-                    <NavItem className="nav-link" to='/products'>
+                    <NavItem>
+                        <NavLink className="nav-link" to='/products'>
                         <i className="fa fa-list fa-lg" /> Products
+                        </NavLink>
                     </NavItem>
-                    <NavItem className="nav-link" to='/games'>
+                    <NavItem>
+                        <NavLink className="nav-link" to='/games'>
                         <i className="fa fa-list fa-lg" /> Games
+                        </NavLink>
                     </NavItem>
-                    <NavItem className="nav-link" to='/aboutus'>
+                    <NavItem>
+                        <NavLink className="nav-link" to='/aboutus'>
                         <i className="fa fa-info fa-lg" /> About
+                        </NavLink>
                     </NavItem>
                 </Nav>
             </Collapse>
