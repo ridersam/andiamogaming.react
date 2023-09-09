@@ -7,7 +7,10 @@ const AboutUs = () => {
     return (
         <Container>
             <AboutSubHeader current='About Us' />
+            <hr style={{color: "aliceblue"}} />
+                <h2>Our Staff</h2>
             <EMployeesList />
+                <hr style={{color: "aliceblue"}} />
             <ContactInfo />
         </Container>
     );

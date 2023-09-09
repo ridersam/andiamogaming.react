@@ -4,9 +4,11 @@ import ContactForm from "../../components/ContactForm";
 const ContactInfo = () => {
     return (
         <Container>
-            <Row className="row-content align-items-center">
+            <Row className="row-content  align-items-center">
                 <h2>Contact Info</h2>
-                <Col sm='4'>
+                <Col
+                sm='4'
+                className="text-center">
                     <h5>Our Address</h5>
                     <address style={{color: 'aliceblue'}}>
                         4 Game Place

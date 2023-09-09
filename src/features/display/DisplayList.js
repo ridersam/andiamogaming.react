@@ -5,7 +5,7 @@ import { selectFeaturedProduct } from '../products/productsSlice';
 import { selectFeaturedBlog } from '../blogs/blogsSlice.js';
 
 const DisplayList = () => {
-    const items = [selectFeaturedGame(), selectFeaturedProduct(), selectFeaturedBlog()];
+    const items = [selectFeaturedGame(), selectFeaturedProduct()];
 
     return (
         <Row>
