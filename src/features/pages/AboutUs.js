@@ -1,10 +1,14 @@
 import { Container } from "reactstrap";
-import EmployeesList from "../employees/EMployeesList";
+import EMployeesList from "../employees/EMployeesList";
+import AboutSubHeader from "../../components/AboutSubHeader";
+import ContactInfo from "../contact/ContactInfo";
 
 const AboutUs = () => {
     return (
         <Container>
-            <EmployeesList />
+            <AboutSubHeader current='About Us' />
+            <EMployeesList />
+            <ContactInfo />
         </Container>
     );
 };

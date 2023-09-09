@@ -3,6 +3,7 @@
 
 body {
   font-family: 'PT Sans', sans-serif;
+  color: aliceblue;
 }
 
 h1,
@@ -10,6 +11,31 @@ h2,
 h3,
 .card-body > .card-title {
   font-family: 'Sedgwick Ave Display', cursive;
+  color: aliceblue;
+}
+
+.col .address {
+  color: aliceblue;
+}
+
+.card .card-body {
+  background-color: rgb(73, 73, 73);
+}
+
+.card .card-text {
+  color: aliceblue;
+}
+
+.card .card-header {
+  background-color: #252525;
+}
+
+.card-header .card-title {
+  color: #AFBE8F;
+}
+
+.card .card-footer {
+  background-color: #252525;
 }
 
 .card-title {
@@ -18,7 +44,7 @@ h3,
 }
 
 h2 {
-  color: #907AD6;
+  color: #AFBE8F;
 }
 
 .card-img-overlay .card-title {
@@ -88,3 +114,6 @@ h5 {
   color: aliceblue;
 }
 
+.address {
+  color: aliceblue;
+}

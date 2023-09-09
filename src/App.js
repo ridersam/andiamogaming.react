@@ -4,11 +4,12 @@ import Footer from './components/Footer';
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './features/pages/HomePage';
 import AboutUs from './features/pages/AboutUs';
-import EmployeesList from './features/employees/EMployeesList';
+import EMployeesList from './features/employees/EMployeesList';
 import ProductPage from './features/pages/ProductPage';
 import ProductDetailPage from './features/pages/ProductDetailPage';
 import GamePage from './features/pages/GamePage';
 import GameDetailPage from './features/pages/GameDetailPage';
+import BlogPage from './features/pages/BlogPage';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Header />
         <Routes>
           <Route path='/' element={<HomePage />} />
-          <Route path='employees' element={<EmployeesList />} />
+          <Route path='aboutus' element={<AboutUs />} />
           <Route path='products' element={<ProductPage/>} />
           <Route 
             path='products/:productId'
@@ -27,6 +28,7 @@ function App() {
             path='games/:gameId'
             element={<GameDetailPage />}
           />
+          <Route path='blogs' element={<BlogPage />} />
         </Routes>
         <Footer />
     </div>

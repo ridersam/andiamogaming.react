@@ -38,6 +38,11 @@ const Header = () => {
                         </NavLink>
                     </NavItem>
                     <NavItem>
+                        <NavLink className='nav-link' to='/blogs'>
+                            <i className="fa fa-list fa-lg" /> Blogs
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
                         <NavLink className="nav-link" to='/aboutus'>
                         <i className="fa fa-info fa-lg" /> About
                         </NavLink>
