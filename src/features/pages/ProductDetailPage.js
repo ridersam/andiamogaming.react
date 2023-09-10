@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { selectProductById } from "../products/productsSlice";
 import ProductDetail from "../products/ProductDetail";
 import SubHeader from "../../components/SubHeader";
+import SusbscriptionForm from '../../components/SusbscriptionForm';
 
 const ProductDetailPage = () => {
     const { productId } = useParams();
@@ -13,6 +14,9 @@ const ProductDetailPage = () => {
             <SubHeader current={product.name} detail={true} />
             <Row>
                 <ProductDetail product={product} />
+            </Row>
+            <Row>
+                <SusbscriptionForm/>
             </Row>
         </Container>
     )
