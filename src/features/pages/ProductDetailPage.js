@@ -4,10 +4,11 @@ import { selectProductById } from "../products/productsSlice";
 import ProductDetail from "../products/ProductDetail";
 import SubHeader from "../../components/SubHeader";
 import SusbscriptionForm from '../../components/SusbscriptionForm';
+import { useSelector } from "react-redux";
 
 const ProductDetailPage = () => {
     const { productId } = useParams();
-    const product = selectProductById(productId);
+    const product = useSelector(selectProductById(productId));
 
     return (
         <Container>

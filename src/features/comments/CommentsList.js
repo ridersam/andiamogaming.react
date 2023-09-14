@@ -2,9 +2,10 @@ import { Col } from "reactstrap";
 import Comment from "./Comment";
 import { selectCommentByGameId } from "./commentsSlice";
 import CommentForm from "./CommentForm";
+import { useSelector } from "react-redux";
 
 const CommentsList = ({gameId}) => {
-    const comments = selectCommentByGameId(gameId);
+    const comments = useSelector(selectCommentByGameId(gameId));
 
     if (comments && comments.length > 0) {
         return (

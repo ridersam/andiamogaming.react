@@ -1,13 +1,27 @@
-import {TIERS} from "../../app/shared/TIERS"
+import { createSlice } from "@reduxjs/toolkit";
+import {TIERS} from "../../app/shared/TIERS";
 
-export const selectAllTiers = () => {
-    return TIERS;
+const initialState = {
+    productsArray: TIERS
 };
 
-export const selectProductById = (id) => {
-    return TIERS.find((product) => product.id === parseInt(id));
+const productsSlice = createSlice({
+    name: 'products',
+    initialState
+});
+
+export const productsReducer = productsSlice.reducer;
+
+export const selectAllTiers = (state) => {
+    return state.products.productsArray;
 };
 
-export const selectFeaturedProduct = () => {
-    return TIERS.find((product) => product.featured);
+export const selectProductById = (id) => (state) => {
+    return state.products.productsArray.find(
+        (product) => product.id === parseInt(id)
+    );
+};
+
+export const selectFeaturedProduct = (state) => {
+    return state.products.productsArray.find((product) => product.featured);
 };

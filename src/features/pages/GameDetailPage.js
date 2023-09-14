@@ -4,10 +4,11 @@ import { selectGameById } from "../games/gamesSlice";
 import GameDetail from "../games/GameDetail";
 import GameSubHeader from "../../components/GameSubHeader";
 import CommentsList from "../comments/CommentsList";
+import { useSelector } from "react-redux";
 
 const GameDetailPage = () => {
     const {gameId} = useParams();
-    const game = selectGameById(gameId);
+    const game = useSelector(selectGameById(gameId));
 
     return (
         <Container>

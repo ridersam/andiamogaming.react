@@ -1,9 +1,10 @@
 import { Col, Row } from "reactstrap";
 import GameCard from "./GameCard";
 import { selectAllGames } from "./gamesSlice";
+import { useSelector } from "react-redux";
 
 const GamesList = () => {
-    const games = selectAllGames();
+    const games = useSelector(selectAllGames);
     return (
         <Row className="ms-auto, text-center">
             {games.map((game) => {

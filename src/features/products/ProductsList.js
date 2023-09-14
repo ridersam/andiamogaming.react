@@ -1,9 +1,10 @@
 import { Col, Row } from "reactstrap";
 import ProductCard from "./ProductCard";
 import { selectAllTiers } from "./productsSlice";
+import { useSelector } from "react-redux";
 
 const ProductsList = () => {
-    const products = selectAllTiers();
+    const products = useSelector(selectAllTiers);
     return (
         <Row className="ms-auto, text-center" >
             {products.map((product) => {
