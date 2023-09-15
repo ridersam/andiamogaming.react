@@ -1,19 +1,24 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
 import { Button, Modal, ModalBody, ModalHeader, FormGroup, Label } from "reactstrap";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { validateCommentForm } from "../../utils/validateCommentForm";
+import { addComment } from "./commentsSlice";
 
 const CommentForm = ({ gameId }) => {
     const [modalOpen, setModalOpen] = useState(false);
+    const dispatch = useDispatch();
     const handleSubmit = (values) => {
         const comment = {
-            campsiteId: parseInt(gameId),
+            gameId: parseInt(gameId),
             rating: values.rating,
             author: values.author,
-            text: values.commentText
+            text: values.commentText,
+            date: new Date(Date.now()).toISOString()
         };
 
         console.log(comment);
+        dispatch(addComment(comment));
         setModalOpen(false);
     };
 
@@ -23,7 +28,14 @@ const CommentForm = ({ gameId }) => {
                 <i className="fa fa-pencil fa-lg" /> Add Comment
             </Button>
             <Modal isOpen={modalOpen}>
-                <ModalHeader toggle={() => setModalOpen(false)} style={{background: 'rgb(73, 73, 73)'}} ><h4 style={{ color: "#AFBE8F" }}>Add Comment</h4></ModalHeader>
+                <ModalHeader 
+                    toggle={() => setModalOpen(false)} 
+                    style={{background: 'rgb(73, 73, 73)'}} 
+                >
+                    <h4 style={{ color: "#AFBE8F" }}>
+                        Add Comment
+                    </h4>
+                </ModalHeader>
                 <ModalBody style={{background: '#252525' }}>
                     <Formik initialValues={{
                         rating: undefined,
