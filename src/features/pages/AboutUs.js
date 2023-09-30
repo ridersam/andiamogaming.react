@@ -1,5 +1,5 @@
 import { Container } from "reactstrap";
-import EMployeesList from "../employees/EMployeesList";
+import EmployeesList from "../employees/EmployeesList";
 import AboutSubHeader from "../../components/AboutSubHeader";
 import ContactInfo from "../contact/ContactInfo";
 
@@ -9,7 +9,7 @@ const AboutUs = () => {
             <AboutSubHeader current='About Us' />
             <hr style={{color: "aliceblue"}} />
                 <h2>Our Staff</h2>
-            <EMployeesList />
+            <EmployeesList />
                 <hr style={{color: "aliceblue"}} />
             <ContactInfo />
         </Container>

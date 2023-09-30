@@ -2,7 +2,7 @@ import { Col, Row } from "reactstrap";
 import EmployeeCard from "./EmployeeCard";
 import { selectAllEmployees } from "./employeesSlice";
 
-const EMployeesList = () => {
+const EmployeesList = () => {
     const employees = selectAllEmployees();
     return (
         <Row className="ms-auto, text-center" >
@@ -21,4 +21,4 @@ const EMployeesList = () => {
     )
 }
 
-export default EMployeesList;
+export default EmployeesList;
